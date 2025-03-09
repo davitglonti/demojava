@@ -13,6 +13,13 @@ spring:
     default-schema: Car
     liquibase-schema: Car
 
+aws:
+  access-key-id: AKIAYXWBOEASTX5ioklhjohKNDZM
+  secret-access-key: lgeaGKAvjiihioohoC0oeUhApUcOx+SKp+lAHidCsS+Hqf
+  s3:
+    bucket: davlaga-demo-carsj
+    region: eu-north-1
+
 jwt:
   secret-key: ${JAVA_COURSE_JWT_KEY}
 
