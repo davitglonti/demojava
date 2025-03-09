@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/javacourse-db
+    username: javacoursedb-user
+    password: 12345678
+    driver-class-name: org.postgresql.Driver
+
+  liquibase:
+    change-log: db/changelog/db.changelog-master.yaml
+    default-schema: Car
+    liquibase-schema: Car
+
+jwt:
+  secret-key: ${JAVA_COURSE_JWT_KEY}
+
